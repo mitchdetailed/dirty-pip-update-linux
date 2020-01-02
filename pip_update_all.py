@@ -24,4 +24,4 @@ for line in data:
     if a > 2 : 
         b,*c = line.split()
         print("\nAttempting to update %s\n" % (b))
-        os.system('pip install --user --upgrade %s' % (b))
+        os.system('pip3 install --user --upgrade %s' % (b))
