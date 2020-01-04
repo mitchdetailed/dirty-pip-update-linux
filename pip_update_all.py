@@ -6,7 +6,7 @@
 # modify folder location with actual location. eg.: /home/user/Documents/python3
 
 # From there, type the following into the Shell terminal:
-#  ~$ pip list --outdated | python3 pip_update_all.py
+#  ~$ python3 -m pip list --outdated | python3 -m pip_update_all.py
 
 
 import os
@@ -24,4 +24,4 @@ for line in data:
     if a > 2 : 
         b,*c = line.split()
         print("\nAttempting to update %s\n" % (b))
-        os.system('pip3 install --user --upgrade %s' % (b))
+        os.system('python3 -m pip install --user --upgrade %s' % (b))
